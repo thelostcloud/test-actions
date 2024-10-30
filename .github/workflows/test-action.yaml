@@ -23,4 +23,4 @@ jobs:
     environment: test
     steps:
     - name: test2
-      run: "echo Test 2"       
+      run: echo "Test 2"       
