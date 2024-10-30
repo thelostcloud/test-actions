@@ -1,0 +1,24 @@
+name: Terraform Workflows
+on:  
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  test1:
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      run: echo "Test 1"
+
+
+  test2:
+    needs: test1
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      run: echo "Test 2"       
