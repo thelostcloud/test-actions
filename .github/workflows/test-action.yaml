@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: test
     steps:
+    - name: test1
       run: echo "Test 1"
 
 
@@ -21,4 +22,5 @@ jobs:
     runs-on: ubuntu-latest
     environment: test
     steps:
-      run: echo "Test 2"       
+    - name: test2
+      run: "echo Test 2"       
